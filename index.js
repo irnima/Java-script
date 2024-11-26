@@ -1,6 +1,5 @@
-let user = [1, 2, 3, 4];
-let q = user.every((user) => {
-  let y = user > 5;
-  return y;
-});
+// Prompt
+let cellphone = prompt("لطفا شماره تلفن خود را وارد کنید");
+let phone = cellphone.slice(4, 7);
+let q = cellphone.replace(phone, "****");
 console.log(q);
