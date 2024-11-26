@@ -1,5 +1,13 @@
-// Prompt
-let cellphone = prompt("لطفا شماره تلفن خود را وارد کنید");
-let phone = cellphone.slice(4, 7);
-let q = cellphone.replace(phone, "****");
-console.log(q);
+// nomre
+let nomre = prompt("لطفا نمره ی معدل خود را وارد کنید");
+switch (true) {
+  case nomre >= 0 && nomre < 15:
+    console.log("MRD");
+    break;
+  case nomre >= 15 && nomre <= 20:
+    console.log("GBL");
+    break;
+  default:
+    console.log("WRONG");
+    break;
+}
